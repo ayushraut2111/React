@@ -23,7 +23,7 @@ const Book=()=>{
   );
 }
 const Image=()=> <img src="https://m.media-amazon.com/images/I/91MDUJ1ejuS._AC_UL480_FMwebp_QL65_.jpg" alt="" />;
-const Title=()=> <h1>Hello i am a book</h1>;
+const Title=()=> <h1 style={{color:'red',border:'2px solid green'}} >Hello i am a book</h1>;
 const Author=()=> <p>Ayush</p>;
 
 ReactDOM.render(<Booklist/>,document.getElementById('root'));
