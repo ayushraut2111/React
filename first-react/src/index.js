@@ -1,13 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// import './index.css';
+// import App from './App';
+// import reportWebVitals from './reportWebVitals';
 
-const Greeting=()=>
-{
-  return React.createElement('div',{},React.createElement('h1',{},"Hello world"));
+const Greeting=()=>{
+  return(
+    <div>
+    <Person/>
+    <h1>Hello</h1>
+    <Message/>
+    </div>
+  );
 }
+const Person=()=>{
+  return(<h1>
+    Ayush
+  </h1>);
+}
+const Message=()=><p>Byee</p>;
+
 ReactDOM.render(<Greeting/>,document.getElementById('root'));
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
