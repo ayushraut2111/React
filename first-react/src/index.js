@@ -4,13 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-function Greeting()
+const Greeting=()=>
 {
-  return (
-    <h1>
-      hello
-    </h1>
-  );
+  return React.createElement('div',{},React.createElement('h1',{},"Hello world"));
 }
 ReactDOM.render(<Greeting/>,document.getElementById('root'));
 
