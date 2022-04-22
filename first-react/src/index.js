@@ -4,23 +4,29 @@ import ReactDOM from 'react-dom';
 // import App from './App';
 // import reportWebVitals from './reportWebVitals';
 
-const Greeting=()=>{
+const Booklist=()=>{
   return(
     <div>
-    <Person/>
-    <h1>Hello</h1>
-    <Message/>
+      <Book/>   
+      <Book/>
+      <Book/>
     </div>
   );
 }
-const Person=()=>{
-  return(<h1>
-    Ayush
-  </h1>);
+const Book=()=>{
+  return (
+    <div>
+    <Image/>
+    <Title/>
+    <Author/>
+    </div>
+  );
 }
-const Message=()=><p>Byee</p>;
+const Image=()=> <img src="https://m.media-amazon.com/images/I/91MDUJ1ejuS._AC_UL480_FMwebp_QL65_.jpg" alt="" />;
+const Title=()=> <h1>Hello i am a book</h1>;
+const Author=()=> <p>Ayush</p>;
 
-ReactDOM.render(<Greeting/>,document.getElementById('root'));
+ReactDOM.render(<Booklist/>,document.getElementById('root'));
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
