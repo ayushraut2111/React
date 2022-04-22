@@ -8,23 +8,22 @@ const Booklist=()=>{
   return(
     <div>
       <Book/>   
-      <Book/>
-      <Book/>
     </div>
   );
 }
+const title='hello world';
 const Book=()=>{
+  const author='Ayush';
   return (
     <div>
-    <Image/>
-    <Title/>
-    <Author/>
+    <img src="https://m.media-amazon.com/images/I/91MDUJ1ejuS._AC_UL480_FMwebp_QL65_.jpg" alt="" />
+    <h1>{author}</h1>
+    <p>{title}</p>
+    <p>{6+6}</p>     {/* this will work properly as this will return 6+6  */}
+    {/* <p>{let x=6+6}</p>     we cant initialise it as this because it is not returning anything but JS inside JSX must return any value */}
     </div>
   );
 }
-const Image=()=> <img src="https://m.media-amazon.com/images/I/91MDUJ1ejuS._AC_UL480_FMwebp_QL65_.jpg" alt="" />;
-const Title=()=> <h1 style={{color:'red',border:'2px solid green'}} >Hello i am a book</h1>;
-const Author=()=> <p>Ayush</p>;
 
 ReactDOM.render(<Booklist/>,document.getElementById('root'));
 
