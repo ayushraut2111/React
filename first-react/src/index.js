@@ -26,16 +26,27 @@ const Booklist=()=>{
     </div>
   );
 }
-const Book=(props)=>{
+const Book=({number,img,author,title})=>{
   return (
-    <div>
-    <img src={props.img} alt="" />
-    <h1>{props.author}</h1>
-    <p>{props.title}</p>
-    <p>{props.number}</p>
-    </div>
+    <article>
+    <img src={img} alt="" />
+    <h1>{author}</h1>
+    <p>{title}</p>
+    <p>{number}</p>
+    </article>
   );
 }
+// const Book=(props)=>{
+//   const {number,img,author,title}=props;
+//   return (
+//     <article>
+//     <img src={img} alt="" />
+//     <h1>{author}</h1>
+//     <p>{title}</p>
+//     <p>{number}</p>
+//     </article>
+//   );
+// }
 
 // ReactDOM.render(<Booklist/>,document.getElementById('root'));
 const container=document.getElementById('root');
