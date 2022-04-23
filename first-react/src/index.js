@@ -3,24 +3,36 @@ import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App';
 // import reportWebVitals from './reportWebVitals';
+const book2={
+  img:"https://images-eu.ssl-images-amazon.com/images/I/41-Jq9RDQwL._AC_SX184_.jpg",
+  title:"ayush",
+  number:2
+}
 
 const Booklist=()=>{
   return(
     <div>
-      <Book/>   
+      <Book 
+      img="https://m.media-amazon.com/images/I/91MDUJ1ejuS._AC_UL480_FMwebp_QL65_.jpg"
+      author="ayush"
+      title="hello i am a prop"
+      />   
+      <Book
+      img={book2.img}
+      title={book2.title}
+      // number=2 we cant assign number like this we have to use curly braces to identify that we are using javascript
+      number={book2.number} 
+      />   
     </div>
   );
 }
-const title='hello world';
-const Book=()=>{
-  const author='Ayush';
+const Book=(props)=>{
   return (
     <div>
-    <img src="https://m.media-amazon.com/images/I/91MDUJ1ejuS._AC_UL480_FMwebp_QL65_.jpg" alt="" />
-    <h1>{author}</h1>
-    <p>{title}</p>
-    <p>{6+6}</p>     {/* this will work properly as this will return 6+6  */}
-    {/* <p>{let x=6+6}</p>     we cant initialise it as this because it is not returning anything but JS inside JSX must return any value */}
+    <img src={props.img} alt="" />
+    <h1>{props.author}</h1>
+    <p>{props.title}</p>
+    <p>{props.number}</p>
     </div>
   );
 }
