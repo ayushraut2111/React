@@ -16,7 +16,14 @@ const Booklist=()=>{
       img="https://m.media-amazon.com/images/I/91MDUJ1ejuS._AC_UL480_FMwebp_QL65_.jpg"
       author="ayush"
       title="hello i am a prop"
-      />   
+      >   
+      <div style={{border:'2px solid red',display:'inline-block'}}>
+        <h5>
+          Children prop
+        </h5>
+        <p>Hello i am children</p>
+      </div>
+      </Book>
       <Book
       img={book2.img}
       title={book2.title}
@@ -26,11 +33,12 @@ const Booklist=()=>{
     </div>
   );
 }
-const Book=({number,img,author,title})=>{
+const Book=({number,img,author,title,children})=>{
   return (
     <article>
     <img src={img} alt="" />
     <h1>{author}</h1>
+    {children}
     <p>{title}</p>
     <p>{number}</p>
     </article>
