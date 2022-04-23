@@ -37,7 +37,10 @@ const Book=(props)=>{
   );
 }
 
-ReactDOM.render(<Booklist/>,document.getElementById('root'));
+// ReactDOM.render(<Booklist/>,document.getElementById('root'));
+const container=document.getElementById('root');
+const root=ReactDOM.createRoot(container);
+root.render(<Booklist/>)
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
