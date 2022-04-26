@@ -20,7 +20,11 @@ const Booklist=()=>{
     <div>
       {
         books.map((book)=>{
-          return <Book book={book} />
+          return (<Book book={book} >
+            <h1>
+              hello i am child
+            </h1>
+            </Book>)
         })
       }
     </div>
@@ -30,6 +34,7 @@ const Book=(props)=>{
   const {number,img,author,title}=props.book;
   return (
     <article>
+      {props.children}
     <img src={img} alt="" />
     <h1>{author}</h1>
     <p>{title}</p>
