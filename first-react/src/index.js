@@ -20,10 +20,7 @@ const Booklist=()=>{
     <div>
       {
         books.map((book)=>{
-          return (<Book {...book} >
-            <h1>
-            </h1>
-            </Book>)
+          return (<Book {...book} />)
         })
       }
     </div>
