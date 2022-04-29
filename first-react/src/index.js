@@ -1,21 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// import App from './App';
-// import reportWebVitals from './reportWebVitals';
-const books=[{
-  id:1,
-  img:"https://images-eu.ssl-images-amazon.com/images/I/41-Jq9RDQwL._AC_SX184_.jpg",
-  title:"ayush",
-  number:2,
-  author:'chaurasia'
-},
-{
-  id:2,
-  img:"https://images-eu.ssl-images-amazon.com/images/I/41-Jq9RDQwL._AC_SX184_.jpg",
-  title:"anish",
-  number:2
-}]
+import {books} from './books'
+
 
 const Booklist=()=>{
   return(
