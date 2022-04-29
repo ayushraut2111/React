@@ -19,17 +19,24 @@ const Booklist=()=>{
   return(
     <div>
       {
-        books.map((book)=>{
-          return (<Book {...book} />)
+        books.map((book,index)=>{
+          return (<Book key={index} {...book} >
+            <h1>
+              hello
+            </h1>
+            </Book>
+            
+            )
         })
       }
     </div>
   );
 }
-const Book=({number,img,author,title})=>{
-  // const {number,img,author,title}=props;
+const Book=({number,img,author,title,children})=>{
+  // const {number,img,author,title}=props.book;
   return (
     <article>
+      {children}
     <img src={img} alt="" />
     <h1>{author}</h1>
     <p>{title}</p>
