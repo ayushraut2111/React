@@ -13,7 +13,7 @@ const books=[{
 {
   id:2,
   img:"https://images-eu.ssl-images-amazon.com/images/I/41-Jq9RDQwL._AC_SX184_.jpg",
-  title:"ayush",
+  title:"anish",
   number:2
 }]
 
@@ -43,7 +43,7 @@ const Book=({number,img,author,title,children})=>{
     <h1>{author}</h1>
     <p>{title}</p>
     <p>{number}</p>
-    <button onClick={()=>alert(" i am clicked")}>
+    <button onClick={()=>alert(title)}>
       eventlistener
     </button>
     </article>
