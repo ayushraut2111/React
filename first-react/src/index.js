@@ -36,6 +36,10 @@ const Booklist=()=>{
 }
 const Book=({number,img,author,title,children})=>{
   // const {number,img,author,title}=props.book;
+  const event=()=>
+  {
+    alert("i am clicked");
+  }
   return (
     <article>
       {children}
@@ -43,6 +47,9 @@ const Book=({number,img,author,title,children})=>{
     <h1>{author}</h1>
     <p>{title}</p>
     <p>{number}</p>
+    <button onClick={event}>
+      eventlistener
+    </button>
     </article>
   );
 }
