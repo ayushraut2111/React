@@ -5,22 +5,22 @@ const App=()=>
 {
   return(
     <div className="mainbody">
-      <nav class="navbar">
-        <ul class="list">
-            <li class="navc" id="navc1">amazon</li>
-            <li class="navc" id="navc1">Deliever to ayush</li>
-            <li class="navc" id="navc3"><input type="search" name="" id="search" placeholder='                              search'/></li>
-            <li class="navc" id="navc4">Hello, Ayush
-               <div class="inner">
-                   <a href="" class="main">Account</a>
-                   <a href="" class="main">Orders</a>
-                   <a href="" class="main">Browsing history</a>
-                   <a href="" class="main">Recommendations</a>
-                   <a href="" class="main">Watchlist</a>
-                   <a href="" class="main">kindle unlimited</a>
-                   <a href="" class="main">Subscribe</a>
-                   <a href="" class="main">Switch account</a>
-                   <a href="" class="main">Sign out</a>
+      <nav className="navbar">
+        <ul className="list">
+            <li className="navc" id="navc1">amazon</li>
+            <li className="navc" id="navc1">Deliever to ayush</li>
+            <li className="navc" id="navc3"><input type="search" name="" id="search" placeholder='                              search'/></li>
+            <li className="navc" id="navc4">Hello, Ayush
+               <div className="inner">
+                   <a href="" className="main">Account</a>
+                   <a href="" className="main">Orders</a>
+                   <a href="" className="main">Browsing history</a>
+                   <a href="" className="main">Recommendations</a>
+                   <a href="" className="main">Watchlist</a>
+                   <a href="" className="main">kindle unlimited</a>
+                   <a href="" className="main">Subscribe</a>
+                   <a href="" className="main">Switch account</a>
+                   <a href="" className="main">Sign out</a>
                </div>
             </li>
             <li className="navc">Returns and orders</li>
