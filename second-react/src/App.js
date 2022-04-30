@@ -49,17 +49,20 @@ const App=()=>
         )
       }
     </div>
+    <footer className="foot">
+      <h3 className="footh">Back to Top</h3>
+    </footer>
     </div>
   );
 }
 const Body=(props)=>
 {
-  const {id,name,lastname}=props;
+  const {img,name,price}=props;
   return(
     <div className="body">
-      <h4>{id}</h4>
-      <h1>{name}</h1>
-      <h2>{lastname}</h2>
+      <img src={img} alt="" className='image'/>
+      <h4>{name}</h4>
+      <h3>{price}</h3>
     </div>
   );
 }
