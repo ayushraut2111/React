@@ -67,20 +67,3 @@ const Body=(props)=>
 export default App;
 
 
-
-
-
-// <div className="main">
-//     <h1 className="mainheading">
-//       hello i am heading
-//     </h1>
-//     <div className="content">
-//       {
-//         Objects.map((obj)=>
-//         {
-//           return (<Body {...obj}/>)
-//         }
-//         )
-//       }
-//     </div>
-//   </div>
