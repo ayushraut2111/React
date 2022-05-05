@@ -1,14 +1,36 @@
 import React,{useState} from 'react';
-import {data} from '../../../src/data'   // .. means going to the back folder
+import {data} from '../../../src/data'   
+import '../../../src/App.css';
+
+// .. means going to the back folder
 // instead of importing {useState} we can also use React.useState wherever we want to use useState
 
 const UseStateArray=()=>
 {
-    console.table(data);
+    const [people,setPeople]=useState(data);
+    const Dlt=()=>{
+        if(people==data)
+        setPeople([]);
+        else
+        setPeople(data);
+    }
     return(
         <React.Fragment>
-            <h3>Hello i am usestate array</h3>
+            {people.map((person)=>
+            {
+                return(<Persons key={person.id} {...person}/>);  
+            })}
+            <button onClick={Dlt}>Delete</button>
         </React.Fragment>
+    );
+}
+
+const Persons=(props)=>{
+    const {id,name}=props;
+    return(
+        <div>
+            <h4 id='head'>{name}</h4>
+        </div>
     );
 }
 
