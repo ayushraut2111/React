@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 // useState is a inbuilt function
-const USeStateBaiscs=()=>
+const USeStateBasics=()=>
 {
     const[text,setText]=useState('Hello world');
     const Clicked=()=>{
@@ -20,4 +20,4 @@ const USeStateBaiscs=()=>
     );
 }
 
-export default USeStateBaiscs;
+export default USeStateBasics;
