@@ -4,9 +4,9 @@ const UseStateObject=()=>{
     const [person,setPerson]=React.useState({name:"ayush",age:20,message:"hello world"});
     const Chg=()=>{
         // setPerson({...person,message:"I am ayush"})
-        setPerson(()=>
+        setPerson((oldperson)=>    // here oldperson is the current state of the usestate it is not necessary to pass this we can also change usestate with name also i.e. person
         {
-            return({...person,message:"ayush"})
+            return({...oldperson,message:"ayush"})
         })
     }
     return(
