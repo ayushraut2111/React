@@ -3,7 +3,11 @@ import React from 'react';
 const UseStateObject=()=>{
     const [person,setPerson]=React.useState({name:"ayush",age:20,message:"hello world"});
     const Chg=()=>{
-        setPerson({...person,message:"I am ayush"})
+        // setPerson({...person,message:"I am ayush"})
+        setPerson((oldperson)=>
+        {
+            return({...oldperson,message:"ayush"})
+        })
     }
     return(
         <>
