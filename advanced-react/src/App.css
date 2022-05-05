@@ -44,3 +44,9 @@
   width:10vw;
 
 }
+.btn{
+  margin: 3em;
+  padding: 1rem;
+  background-color: rgb(216, 216, 248);
+  cursor: pointer;
+}

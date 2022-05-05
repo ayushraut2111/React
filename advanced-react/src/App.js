@@ -1,5 +1,5 @@
 import './App.css';
-import Setup from './tutorial/use-state/useState-object';
+import Setup from './tutorial/use-state/useState-counter';
 
 function App() {
   return (
