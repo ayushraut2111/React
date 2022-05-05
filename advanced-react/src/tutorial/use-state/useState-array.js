@@ -8,19 +8,19 @@ import '../../../src/App.css';
 const UseStateArray=()=>
 {
     const [people,setPeople]=useState(data);
-    const Dlt=()=>{
-        if(people==data)
-        setPeople([]);
-        else
-        setPeople(data);
+    const Dlt=(id)=>{
+        let ft=people.filter((person)=>person.id!==id);
+        setPeople(ft);
     }
     return(
         <React.Fragment>
             {people.map((person)=>
             {
-                return(<Persons key={person.id} {...person}/>);  
+                return(<><Persons key={person.id} {...person}/>
+                        <button onClick={()=>Dlt(person.id)}>Delete</button>
+                        </>
+                );  
             })}
-            <button onClick={Dlt}>Delete</button>
         </React.Fragment>
     );
 }
