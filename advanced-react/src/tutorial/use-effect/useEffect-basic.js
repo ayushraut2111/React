@@ -1,10 +1,11 @@
-import React, {useEffect} from "react";
+import React, {useState,useEffect} from "react";
 
 const UseEffectBasic=()=>
 {
     return(
+        
         <>
-        <h1>helo</h1>
+        <h1>UseEffectBasics</h1>
         </>
     );
 }
