@@ -4,8 +4,11 @@ const UseEffectBasic=()=>
 {
     const [value,setValue]=useState(0);
     useEffect(()=>{
-        document.title=`my value is ${value}`
         console.log("i am rendered");
+        if(value%2==0)
+        document.title=`my value is ${value}`;
+        else
+        document.title='title';
     });
     return(
         <>
