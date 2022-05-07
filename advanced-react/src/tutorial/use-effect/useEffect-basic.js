@@ -9,7 +9,7 @@ const UseEffectBasic=()=>
         document.title=`my value is ${value}`;
         else
         document.title='title';
-    });
+    },[]);
     return(
         <>
         <h1>UseEffectBasics</h1>
