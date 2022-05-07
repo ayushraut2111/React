@@ -10,7 +10,13 @@ const UseEffectCleanup=()=>{
     }
 
     useEffect(()=>{
+        console.log('rendered')
         window.addEventListener('resize',sizechange);
+        return ()=>{
+            console.log('i am a cleanup function');
+            window.removeEventListener('resize',sizechange);  // removeevent listener will remove the event which is acting on that variable(window)
+            // after adding event we are adding remove eventlistener inside clean function so when cleaup function is called even listener is removed 
+        }
     });
 
 return(
