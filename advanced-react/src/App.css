@@ -50,3 +50,9 @@
   background-color: rgb(216, 216, 248);
   cursor: pointer;
 }
+.size{
+  display: inline;
+  margin: 1rem;
+  border: 2px solid red;
+  color:#282c34;
+}
