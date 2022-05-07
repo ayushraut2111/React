@@ -9,7 +9,8 @@ const UseEffectBasic=()=>
         document.title=`my value is ${value}`;
         else
         document.title='title';
-    },[]);
+    },[]);      // this second parameter is dependency list it tells the useeffect when to run, in dependency list we pass some values on which useeffect is going to be dependent
+    // if there is any change in the passed value then our use effect is going to run
     return(
         <>
         <h1>UseEffectBasics</h1>
