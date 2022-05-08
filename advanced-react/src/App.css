@@ -56,3 +56,22 @@
   border: 2px solid red;
   color:#282c34;
 }
+*
+{
+  margin: 0;
+  padding: 0;
+}
+.users{
+  height: 3rem;
+  width:5rem;
+  margin:10rem;
+}
+.main{
+ display:grid;
+ grid-template-columns: repeat(3,1fr);
+}
+img{
+  height: 2cm;
+  width: 2cm;
+  border-radius: 8rem;
+}

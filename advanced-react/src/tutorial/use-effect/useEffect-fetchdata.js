@@ -32,8 +32,13 @@ const UseEffectFetchData=()=>
     );
 }
 const Uselist=(props)=>{
-    console.log(props);
-    const {id,login,avatar_url,html_url}=props;
-
+    const {login,avatar_url,html_url}=props;
+    return(
+    <div className="users">
+        <img src={avatar_url} alt={login} />
+        <h5>{login}</h5>
+        <a target="_blank" href={html_url}>Profile</a>
+    </div>
+    );
 };
 export default UseEffectFetchData;
