@@ -1,5 +1,5 @@
 import './App.css';
-import Setup from './tutorial/conditional-rendering/multiple-returns';
+import Setup from './tutorial/conditional-rendering/short-circuit';
 
 function App() {
   return (
