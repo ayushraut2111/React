@@ -15,7 +15,7 @@ const UseEffectFetchData=()=>
 
     useEffect(()=>{
         GetUsers();
-    },[]);    // so to remove the infinite loop we only renders it once by giving it second argument []
+    },[]);    // so to remove the infinite loop we only renders it once by giving it second argument [].
     return(
         <>
         <h1>
