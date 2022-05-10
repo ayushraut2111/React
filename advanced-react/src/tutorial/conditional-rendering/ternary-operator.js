@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import '../../App.css'
+import '../../App.css';
 const TernaryOperator=()=>{
     const[text,setText]=useState('');
     const [isError,setIsError]=useState(false);

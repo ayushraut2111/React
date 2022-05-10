@@ -1,5 +1,5 @@
 import './App.css';
-import Setup from './tutorial/conditional-rendering/ternary-operator';
+import Setup from './tutorial/conditional-rendering/show-hide';
 
 function App() {
   return (
