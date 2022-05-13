@@ -76,3 +76,13 @@ img{
   width: 2cm;
   border-radius: 8rem;
 }
+.form{
+  margin: 2cm auto;
+  background-color: whitesmoke;
+  width: 10cm;
+  height:5cm;
+}
+.form-content{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
