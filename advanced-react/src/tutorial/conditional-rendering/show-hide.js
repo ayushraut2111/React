@@ -2,10 +2,11 @@ import React,{useEffect,useState} from "react";
 import '../../App.css';
 
 const Showhide=()=>{
+    const [show,setShow]=useState(false);
 
     return(
         <>
-        <h1>show-hide component</h1>
+        <button className="btn" onClick={()=>{setShow(!show)}}>show/hide</button>
         </>
     );
 }
