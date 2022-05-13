@@ -5,7 +5,7 @@ const Showhide=()=>{
 
     return(
         <>
-        <h1>show-hide</h1>
+        <h1>show-hide component</h1>
         </>
     );
 }
