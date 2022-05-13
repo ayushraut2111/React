@@ -1,5 +1,5 @@
 import './App.css';
-import Setup from './tutorial/conditional-rendering/show-hide';
+import Setup from './tutorial/forms/forms-basic';
 
 function App() {
   return (
