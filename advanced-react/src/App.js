@@ -1,5 +1,5 @@
 import './App.css';
-import Setup from './tutorial/forms/forms-basic';
+import Setup from './tutorial/forms/controlled-inputs';
 
 function App() {
   return (
