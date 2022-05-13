@@ -7,7 +7,7 @@ const Form=()=>{
         console.log("i am submitted");
     }
     return (
-        <>
+        <>``
         <article>
             <form class='form' onSubmit={Submit}>    {/*by adding onsubmit we can change the behavior while submitting form*/}
                 <div className="form-content">
