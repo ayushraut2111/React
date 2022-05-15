@@ -23,6 +23,7 @@ const Form=()=>{
         }
         else
         {
+            alert("enter some value")
             console.log("list is empty");
         }
     }
