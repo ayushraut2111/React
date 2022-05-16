@@ -5,7 +5,7 @@ import '../../App.css'
 const Index=()=>{
     const defaultstate={
         people:[],
-        isModalOpen:false,
+        isModalOpen:true,
         modalcontent:'hello world'
     }
     const reducer=(state,action)=>{
@@ -34,11 +34,11 @@ const Submit=(e)=>{
             <br/>
         <button type='submit'>Add</button>
         </form>
-        {
+        {/* {
         state.people.map((person)=>{ 
             a++;
             return <h1>{a}.{person.name}</h1>;
-        })}
+        })} */}
         </>
     );
 }
