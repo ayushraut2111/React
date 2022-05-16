@@ -1,28 +1,33 @@
-import React,{useState,useEffect} from 'react';
+import React,{useState,useReducer} from 'react';
 import {data} from '../../data'
 import Modal from './Modal';
 import '../../App.css'
 const Index=()=>{
+    const defaultstate={
+        people:[],
+        isModalOpen:false,
+        modalcontent:'hello world'
+    }
+    const reducer=(state,action)=>{
+
+    }
     const [name,setName]=useState('');
-    const [people,setPeople]=useState(data);
-    const [showModal,SetShowModal]=useState(false);
+    const [state,dispatch]=useReducer(reducer,defaultstate);
 const Submit=(e)=>{
         e.preventDefault();
         if(name)
         {
-            SetShowModal(true);
-        setPeople([...people,{id:new Date().getTime().toString(),name}]);  // here we will add our input int the list with new id
-        setName('');
+           
         }
         else
         {
-            SetShowModal(true);
+            
         }
     }
     let a=0;
     return(
         <>
-        {showModal&&<Modal/>}
+        {state.isModalOpen&&<Modal modalcontent={state.modalcontent} />}
         <form className='form' onSubmit={Submit}>
             <input type="text" value={name} onChange={(e)=>setName(e.target.value)}/>
             <br/>
@@ -30,8 +35,8 @@ const Submit=(e)=>{
         <button type='submit'>Add</button>
         </form>
         {
-        people.map((person)=>{ 
-            a++;   // here we are printing our list
+        state.people.map((person)=>{ 
+            a++;
             return <h1>{a}.{person.name}</h1>;
         })}
         </>

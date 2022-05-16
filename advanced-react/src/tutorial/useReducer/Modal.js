@@ -1,9 +1,9 @@
 import React,{useStae,useEffect} from 'react';
 
-const Modal=()=>{
+const Modal=({modalcontent})=>{
     return(
         <>
-        <h4>Added</h4>
+        <h4>{modalcontent}</h4>
         </>
     );
 }
