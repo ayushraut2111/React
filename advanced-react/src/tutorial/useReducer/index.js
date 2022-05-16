@@ -19,6 +19,7 @@ const Submit=(e)=>{
             SetShowModal(true);
         }
     }
+    let a=0;
     return(
         <>
         {showModal&&<Modal/>}
@@ -28,8 +29,10 @@ const Submit=(e)=>{
             <br/>
         <button type='submit'>Add</button>
         </form>
-        {people.map((person)=>{    // here we are printing our list
-            return <h1>{person.name}</h1>;
+        {
+        people.map((person)=>{ 
+            a++;   // here we are printing our list
+            return <h1>{a}.{person.name}</h1>;
         })}
         </>
     );
