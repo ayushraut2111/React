@@ -2,6 +2,7 @@ import React,{useState,useReducer} from 'react';
 import {data} from '../../data'
 import Modal from './Modal';
 import '../../App.css'
+//😂😂😂😂😂😂😂
 const Index=()=>{
     const defaultstate={
         people:[],
