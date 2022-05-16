@@ -24,6 +24,8 @@ const Submit=(e)=>{
         {showModal&&<Modal/>}
         <form className='form' onSubmit={Submit}>
             <input type="text" value={name} onChange={(e)=>setName(e.target.value)}/>
+            <br/>
+            <br/>
         <button type='submit'>Add</button>
         </form>
         {people.map((person)=>{    // here we are printing our list
