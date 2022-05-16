@@ -81,6 +81,7 @@ img{
   background-color: whitesmoke;
   width: 10cm;
   height:5cm;
+  border-radius: 1rem;
 }
 .form-content{
   margin-top: 10px;
