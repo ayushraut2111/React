@@ -14,7 +14,7 @@ const Index=()=>{
     const [name,setName]=useState('');
     const [state,dispatch]=useReducer(reducer,defaultstate);
 const Submit=(e)=>{
-        e.preventDefault();
+     e.preventDefault();
         if(name)
         {
            
