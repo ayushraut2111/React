@@ -21,6 +21,12 @@ const Index=()=>{
                 ...state,isModalOpen:true,modalcontent:'please enter item'
             };
         }
+        if(action.type==='CLOSE_MODAL')
+        {
+            return {
+                ...state,isModalOpen:false
+            };
+        }
 
     }
     const [name,setName]=useState('');
@@ -31,7 +37,6 @@ const Submit=(e)=>{
         {
             dispatch({type:'ADD_ITEM',payload:name})  ;  // in dispatch type should match the type in reducer function then it will do that task
             setName('');
-            state.isModalOpen=false;
         }
         else
         {
@@ -39,10 +44,13 @@ const Submit=(e)=>{
 
         }
     }
+    const closeModal=()=>{     // this is the function to close the modal which we are showing
+        dispatch({type:'CLOSE_MODAL'});
+    }
     let a=0;
     return(
         <>
-        {state.isModalOpen&&<Modal modalcontent={state.modalcontent} />}
+        {state.isModalOpen&&<Modal closeModal={closeModal} modalcontent={state.modalcontent} />}
         <form className='form' onSubmit={Submit}>
             <input type="text" value={name} onChange={(e)=>setName(e.target.value)}/>
             <br/>
