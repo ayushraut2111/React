@@ -90,3 +90,11 @@ img{
 input{
   border-radius: 5px;
 }
+.heading{
+  display: inline-block;
+  color: rgb(116, 46, 46);
+  width: 5cm;
+  background-color:grey;
+  border-radius: 5px;
+  margin-top: 1cm;
+}

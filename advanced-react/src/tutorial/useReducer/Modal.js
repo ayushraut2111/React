@@ -5,7 +5,7 @@ const Modal=(props)=>{
     console.log(modalcontent)
     return(
         <>
-        <h4>{modalcontent}</h4>
+        <h4 className='heading'>{modalcontent}</h4>
         </>
     );
 }
