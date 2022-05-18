@@ -3,7 +3,7 @@ import Setup from './tutorial/prop-drilling/prop-drilling';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App">  
       <Setup />
     </div>
   );
