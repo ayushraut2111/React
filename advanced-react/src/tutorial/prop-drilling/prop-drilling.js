@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import {data} from '../../data';
 const PropDrilling=()=>{
     const [people,setPeople]=useState(data);
-    const Removeperson=(id)=>{
+    const Removeperson=(id)=>{    // prop drilling means passing function as a prop
         setPeople((people)=>{
             return people.filter((person)=>person.id!=id);
         });
