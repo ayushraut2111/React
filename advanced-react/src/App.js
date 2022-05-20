@@ -1,5 +1,5 @@
 import './App.css';
-import Setup from './tutorial/prop-drilling/prop-drilling';
+import Setup from './tutorial/use context/usecontext';
 
 function App() {
   return (
