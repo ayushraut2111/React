@@ -98,3 +98,10 @@ input{
   border-radius: 5px;
   margin-top: 1cm;
 }
+.user{
+  background-color: grey;
+  margin:1cm 10px;
+  padding: 1cm;
+  border-radius: 5px;
+  
+}
