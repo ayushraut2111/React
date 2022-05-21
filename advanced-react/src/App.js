@@ -1,5 +1,5 @@
 import './App.css';
-import Setup from './tutorial/custom-hooks/fetch-example';
+import Setup from './tutorial/prop-type';
 
 function App() {
   return (
