@@ -1,9 +1,11 @@
-import React,{useState,useEffect} from "react";
+import React from "react";
 import {useFetch} from '../custom-hooks/useFetch'
-import { Product } from "./products";
+import Product from "./products";
 const url='https://api.github.com/users'
 const Index=()=>{
     const {products}=useFetch(url);
+    const Products=[...products,{login:'hello',id:100}]
+    console.log(products);
     console.log(products)
     return(
         <>
@@ -11,7 +13,7 @@ const Index=()=>{
             -----Products-----
         </h1>
         <div>
-            {products.map((product)=>{
+            {Products.map((product)=>{
                 return <Product key={product.id} {...product}/>
             })}
         </div>
