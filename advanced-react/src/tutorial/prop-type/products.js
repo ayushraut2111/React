@@ -9,6 +9,7 @@ const Product=({login,id,avatar_url})=>{
             <img src={avatar_url || d_url} alt={login || login} />   {/* for default prop we can also use or operator that if the first value is false then display this */}
             <p style={{color:'blue'}}>${id}</p>
         </h5>
+        <br/>
         </>
     );
 }
