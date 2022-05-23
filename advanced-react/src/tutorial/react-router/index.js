@@ -7,8 +7,8 @@ const ReactRouterSetup = () => {
   return (
     <Router>
         <Routes>
-        <Route exact path='/' element={<Home />}/>
-        <Route path='/about' element={<About />}/>
+        <Route exact path='/' element={<Home />}/>  {/*here path='/' means it is the home page  */}
+        <Route path='/about' element={<About />}/> {/* then after home page we can give paths as /..... and we have to give pages in element tag */}
         <Route path='/people' element={<People />}/>
         </Routes>
     </Router>
