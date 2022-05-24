@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import {BrowserRouter as Router ,Route,Routes, Switch} from 'react-router-dom';
-import Home from './Home'
+import Home from './Home';
 import About from './About';
 import People from './People';
 const ReactRouterSetup = () => {
